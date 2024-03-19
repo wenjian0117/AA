@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img_8"
+    tools:context=".howtoPlay">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/img_7"
+        android:background="@drawable/round"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginEnd="11dp"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:text="Rules"/>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round3">
+
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round">
+            <TextView
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:text="Compare numbers"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Detail: greater than and less than " />
+            <TextView
+                android:layout_width="365dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="Description: when children are presented with two numbers, they can swiftly identify which number is greater than or less than the other " />
+            <TextView
+                android:layout_width="365dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:text="Objective: to get children to be familiarised with numeric numbers"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round">
+            <TextView
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:text="Ordering of numbers "
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Detail: ascending and descending order " />
+            <TextView
+                android:layout_width="365dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="Description: when children are presented with a group of (random) numbers they can rearrange them in order accordingly" />
+            <TextView
+                android:layout_width="365dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:text="Objective: to get children to understand that numbers can be arranged in ascending order or descending order"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/round">
+            <TextView
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:text="Composing numbers "
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Detail: putting a number together using its parts" />
+            <TextView
+                android:layout_width="365dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="Description: when children are presented with a number, they can put together combinations of (two) smaller numbers that equate to the presented number" />
+            <TextView
+                android:layout_width="365dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:text="Objective: to get children to understand that a number can be made up of smaller numbers (combined together)"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Back"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/below"
+        android:text="Back to Homepage"
+        android:textColor="@color/white" />
+
+</LinearLayout>
