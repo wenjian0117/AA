@@ -57,7 +57,7 @@
                 android:layout_marginStart="10dp"
                 android:textStyle="bold"
                 android:textSize="20dp"
-                android:text="Fill in the numbers in the blanks"/>
+                android:text="Fill in the numbers in the field"/>
 
             <ImageView
                 android:layout_width="60dp"
@@ -75,13 +75,13 @@
             android:orientation="horizontal"
             android:layout_marginTop="60dp">
 
-            <EditText
+            <TextView
                 android:id="@+id/num1"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:gravity="center"
-                android:background="@drawable/round3"
-                android:text="?"/>
+                android:background="@drawable/round"
+                android:text="num"/>
 
             <ImageView
                 android:layout_width="60dp"
@@ -107,7 +107,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:gravity="center"
-                android:text="a"
+                android:text="ans"
                 android:layout_marginStart="10dp"
                 android:background="@drawable/round"/>
 

@@ -19,9 +19,9 @@ import java.util.Random;
 public class composeNumber extends AppCompatActivity {
 
 
-    private EditText num1,num2;
-    private TextView num3;
-    private int answer;
+    private EditText num2;
+    private TextView num1,num3;
+    private int answer, question;
     private Button sumbit;
     @SuppressLint({"MissingInflatedId", "WrongViewCast"})
     @Override
@@ -46,19 +46,18 @@ public class composeNumber extends AppCompatActivity {
         sumbit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String num1Str = num1.getText().toString();
                 String num2Str = num2.getText().toString();
                 String numbersOnlyPattern = "[0-9]+";
 
                 // Check if num1 or num2 is empty .equals("?")
-                if(num1Str.isEmpty() || num2Str.isEmpty() || num1Str.contains("?") || num2Str.contains("?")) {
+                if(num2Str.isEmpty() || num2Str.contains("?")) {
                     // Show a message that numbers cannot be empty
-                    Toast.makeText(getApplicationContext(), "The fields cannot be empty!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "The field cannot be empty!", Toast.LENGTH_LONG).show();
                     return; // Exit the method early
                 }
-                else if (!num1Str.matches(numbersOnlyPattern) || !num2Str.matches(numbersOnlyPattern)) {
+                else if ( !num2Str.matches(numbersOnlyPattern)) {
                     // Show a message that only numbers are allowed
-                    Toast.makeText(getApplicationContext(), "The fields can only contain numbers!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "The field can only contain numbers!", Toast.LENGTH_LONG).show();
                     return; // Exit the method early
                 }
 
@@ -115,7 +114,19 @@ public class composeNumber extends AppCompatActivity {
     }
     private void randomNumber() {
         answer = generateRandomNumber();
-        num3.setText(String.valueOf(answer));
-    }
+        question = generateRandomNumber();
 
+        // Ensure answer (num3) is greater than question (num1)
+        if (answer < question) {
+            // Swap the numbers if answer is less than question
+            int temp = question;
+            question = answer;
+            answer = temp;
+        }
+
+        // Update the TextViews to show the generated numbers
+        num3.setText(String.valueOf(answer)); // num3 shows the answer
+        num1.setText(String.valueOf(question)); // num1 shows the question
+    }
 }
+

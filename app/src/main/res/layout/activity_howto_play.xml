@@ -55,7 +55,7 @@
                 android:layout_width="375dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:text="Detail: greater than and less than " />
+                android:text="Answer by click greater than or less than button" />
             <TextView
                 android:layout_width="365dp"
                 android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
                 android:layout_width="375dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:text="Detail: ascending and descending order " />
+                android:text="Drag numbers to ascending or descending order " />
             <TextView
                 android:layout_width="365dp"
                 android:layout_height="wrap_content"
@@ -124,7 +124,7 @@
                 android:layout_width="375dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:text="Detail: putting a number together using its parts" />
+                android:text="Fill in the field - putting a number together using its parts" />
             <TextView
                 android:layout_width="365dp"
                 android:layout_height="wrap_content"
