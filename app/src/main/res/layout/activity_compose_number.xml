@@ -96,7 +96,7 @@
                 android:layout_marginStart="10dp"
                 android:gravity="center"
                 android:background="@drawable/round3"
-                android:text="?"/>
+                android:hint="?"/>
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
